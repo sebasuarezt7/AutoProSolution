@@ -177,17 +177,42 @@ main{
 
 .location{
     display: flex;
+    background-color: rgb(178, 178, 178);
 }
 .locationImage{
-    border: solid;
+    width: 50%;
+    height: 350px;
+    background-image: url(/images/Map.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .locationDetails{
     border: solid;
+    width: 50%;
+    height: 350px;
+    font-size: 2em;
 }
 
 /* Footer */
 footer{
-    background-color: rgb(178, 178, 178);
+    color: white;
+    background-color: black;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.contactUsButton{
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contactUsButton:hover {
+    background-color: white;
+    color: black;
 }
 
 
