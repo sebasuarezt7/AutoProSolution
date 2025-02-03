@@ -18,18 +18,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .headMenu ul{
     display: flex;
     justify-content: center;
@@ -51,7 +39,10 @@ body{
  }
 /* Header Section */
 header{
-    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
     height: 500px;
     background-image: url(/images/header.jpg);
     background-size: cover;
@@ -59,6 +50,13 @@ header{
     border-radius: 5px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 
+}
+.mainHeader{
+    font-size: 5em;
+}
+.subHeadMenu{
+    font-size: 4em;
+    display: inline;
 }
 header h1{
     margin: 0px;
@@ -95,6 +93,12 @@ main{
     display: flex;
     flex-direction: row;
     background-color: rgb(178, 178, 178);
+}
+.welcomeHeader {
+    font-size: 2em;
+}
+.welcomeText{
+    font-size: 1.3em;
 }
 .informationImage{
     width: 50%;
@@ -160,15 +164,16 @@ main{
 }
 .moreInfo{
     font-size: 1em;
-    background-color: black;
+    background-color: rgb(255, 200, 0);
     color: white;
+    border: none;
     border-radius: 5px;
     transition: color 0.7s ease;
 }
 .moreInfo:hover{
     
-    background-color: rgb(178, 178, 178);
-    color: black;
+    background-color: black;
+    color: white;
 }
 .reviews{
     text-align: center;
@@ -176,37 +181,40 @@ main{
 }
 
 .location{
+    border: solid;
     display: flex;
-    background-color: rgb(178, 178, 178);
 }
 .locationImage{
+    width: 50%;
+    height: 350px;
+    font-size: 2em;
+    background-image: url(/images/Map.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.locationDetails{
     width: 50%;
     height: 350px;
     background-image: url(/images/Map.jpg);
     background-size: cover;
     background-position: center;
 }
-.locationDetails{
-    border: solid;
-    width: 50%;
-    height: 350px;
-    font-size: 2em;
-}
 
 /* Footer */
 footer{
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: rgb(255, 200, 0);
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
 }
 .contactUsButton{
-    background-color: black;
+    
     border: none;
     padding: 10px 20px;
     color: white;
+    background-color: black;
     border-radius: 5px;
     cursor: pointer;
 }
