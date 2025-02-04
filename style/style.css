@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+  }
 body{
     font-family: 'Times New Roman', Times, serif;
     padding: 0px;
@@ -42,8 +45,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 15px;
-    height: 500px;
+    height: 460px;
     background-image: url(/images/header.jpg);
     background-size: cover;
     background-position: center;
@@ -92,13 +94,13 @@ main{
 .autoProInformation{
     display: flex;
     flex-direction: row;
-    background-color: rgb(178, 178, 178);
+    background-color: #e0e0e0; 
 }
 .welcomeHeader {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 .welcomeText{
-    font-size: 1.3em;
+    font-size: 1.1em;
 }
 .informationImage{
     width: 50%;
@@ -117,7 +119,7 @@ main{
 /* Here start the services container of the page */
 .servicesHeader, .locationHeader{
     height: 50px;
-    font-size: 3em;
+    font-size: 3.4em;
     text-align: center;
     background-color: rgb(255, 255, 255);
     margin: 15px;
@@ -181,44 +183,55 @@ main{
 }
 
 .location{
-    border: solid;
     display: flex;
 }
 .locationImage{
     width: 50%;
     height: 350px;
-    font-size: 2em;
     background-image: url(/images/Map.jpg);
     background-size: cover;
     background-position: center;
 }
-.locationDetails{
+.locationDescription{
     width: 50%;
     height: 350px;
-    background-image: url(/images/Map.jpg);
+    font-size: 1.3em;
+    background-color: #e0e0e0; 
     background-size: cover;
     background-position: center;
+}
+.locationDescription h1 {
+    text-align: center;
+    font-size: 3em;
 }
 
 /* Aqui esta el contact us */
-.contact-us {
-    background-color: #e0e0e0; /* Fondo gris del cuadro */
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+.email-submission{
+
+    background-color: #e0e0e0; 
     padding: 25px;
-    border-radius: 10px; /* Bordes redondeados */
-    border: 2px solid #ccc; /* Borde definido */
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    border-radius: 10px; 
+    border: 2px solid #ccc; 
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
     max-width: 400px;
     width: 100%;
     text-align: center;
 }
 
 .contact-us-header {
-    font-size: 24px;
+    font-size: 2em;
     margin-bottom: 15px;
 }
 
 .email-submission h2 {
-    font-size: 18px;
+    font-size: 1em;
     margin-bottom: 20px;
 }
 
@@ -228,7 +241,7 @@ main{
     margin: 8px 0;
     border: 1px solid #999;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1em;
 }
 
 textarea.input-field {
@@ -236,7 +249,7 @@ textarea.input-field {
 }
 
 .submit-btn {
-    background-color: #007bff;
+    background-color: #7299c2;
     color: white;
     border: none;
     padding: 12px 15px;
@@ -245,11 +258,10 @@ textarea.input-field {
     font-size: 16px;
     width: 100%;
     margin-top: 10px;
-    transition: background 0.3s;
 }
 
 .submit-btn:hover {
-    background-color: #0056b3;
+    background-color: #2683e6;
 }
 
 /* Footer */
@@ -261,18 +273,11 @@ footer{
     align-items: center;
     justify-content: center;
 }
-.aboutUsButton{
-    
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    background-color: black;
-    border-radius: 5px;
-    cursor: pointer;
+.textAboutUs{
+    font-size: 1.5em;
 }
-.aboutUsButton:hover {
-    background-color: white;
-    color: black;
+.headerAboutUs{
+    font-size: 3em;
 }
 
 
