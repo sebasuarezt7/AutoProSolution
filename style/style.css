@@ -200,6 +200,58 @@ main{
     background-position: center;
 }
 
+/* Aqui esta el contact us */
+.contact-us {
+    background-color: #e0e0e0; /* Fondo gris del cuadro */
+    padding: 25px;
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #ccc; /* Borde definido */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-us-header {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.email-submission h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea.input-field {
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
 /* Footer */
 footer{
     color: black;
@@ -209,7 +261,7 @@ footer{
     align-items: center;
     justify-content: center;
 }
-.contactUsButton{
+.aboutUsButton{
     
     border: none;
     padding: 10px 20px;
@@ -218,9 +270,11 @@ footer{
     border-radius: 5px;
     cursor: pointer;
 }
-.contactUsButton:hover {
+.aboutUsButton:hover {
     background-color: white;
     color: black;
 }
+
+
 
 
