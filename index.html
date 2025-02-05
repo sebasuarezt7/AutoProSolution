@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <header>
-        <div class="headMenu">
-            <h1 class="mainHeader">Auto Pro Solutions</h1>
-            <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="#services">SERVICES OFFERED</a></li>
-              <li><a href="#contactUs">CONTACT</a></li>
-              <li><a href="#aboutUs">ABOUT US</a></li>
-            </ul>
-          </div>
-            <h2 class="subHeadMenu">You trusted auto repair experts in Vaughan</h2> 
-      </header>
+
+    <nav class="navegation">
+        <h1 class="mainHeader">Auto Pro Solutions</h1>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="#services">SERVICES OFFERED</a></li>
+          <li><a href="#contactUs_location">CONTACT</a></li>
+          <li><a href="#aboutUs">ABOUT US</a></li>
+        </ul>
+    </nav>
+
 
     <!-- here is the main content -->
     <main>
+        <header class="mainMessage">
+            <h2 class="subHeadMenu">You trusted auto repair experts in Vaughan</h2> 
+        </header>
+
         <div class="autoProInformation">
             <section class="informationImage"></section>
             <section class="informationText">
@@ -29,7 +32,7 @@
                 <p class="welcomeText">At Auto Pro Solution, we pride our selves on providing higly wxperienced, professional and honest auto repair services to the Vaughan community, with a dedication to quality workmaship and customer satisfaction we are your go-to-solution for all automotive needs</p>
             </section>
         </div>
-
+<!-- here start the services -->
         <h1 id="services" class="servicesHeader">Services</h1>
 
         <div  class="services">
@@ -37,7 +40,7 @@
                 <section class="oilChangeImage"></section>
                 <section class="oilChangeText"> 
                     <p>Expert oil changes with through inspections to keep your engine running smoothly</p>
-                    <button class="moreInfo">More info</button>
+                    <a href="#contactUs_location"><button class="moreInfo">More info</button></a>
                 </section>
             </section>
 
@@ -46,48 +49,55 @@
                 <section class="brakeRepairImage"></section>
 
                 <section class="brakeRepairText"> 
-                    <p>Expert oil changes with through inspections to keep your engine running smoothly</p>
-                    <button class="moreInfo">More info</button>
+                    <p>Professional brake repair for optimal performace and safety on the road </p>
+                   <a href="#contactUs_location"><button class="moreInfo">More info</button></a>
                 </section>
             </section>
 
-            <section class="engineDiagnostics">
+            <section class="engineDiagnostic">
                 <section class="engineDiagnosticImage"></section>
                 <section class="engineDiagnosticText"> 
-                    <p>Expert oil changes with through inspections to keep your engine running smoothly</p>
-                    <button class="moreInfo">More info</button>
+                    <p>Accurate engine diagnostics and repairs to your vehicle in top contition </p>
+                    <a href="#contactUs_location"><button class="moreInfo">More info</button></a>
                 </section>
             </section>
         </div>
-        <h1 class="locationHeader">Location</h1>
-        <div class="location">
-            <section class=" locationImage"></section>
-            <section class="locationDescription">
-                <h1>Auto Pro Solution</h1>
-                <p>140 Regina Rd.#24<p>
-                <p>Woodbridge.On L4L-8N1</p>
-                <p>416-234-5010</p>
-                <h3>Vaughan, Ontario, Canada</h3>
-            </section>
+        <div class="reviews">
+            <p>"I have been taking my car to Auto Pro Solutions for years and I have always been impressed with their expertise and honesty. They go above and beyond to ensure my car is in top condition every time. Highly recommend!"</p>
         </div>
-        <div id="contactUs" class="contact-us">
-            <h1 class="contact-us-header">Contact Us</h1>
-            <section class="email-submission">
-                <h2>If you need an appointment or want to reach us, send us an email!</h2>
-                <form>
-                    <label for="name">Name* </label>
-                    <input type="text" id="name" class="input-field" required>
-        
-                    <label for="email">Email* </label>
-                    <input type="email" id="email" class="input-field" required>
-        
-                    <label for="message">Message* </label>
-                    <textarea id="message" class="input-field" rows="4" required></textarea>
-        
-                    <button type="submit" class="submit-btn">Send Email</button>
-                </form>
-            </section>
-        </div>
+ <!-- Here start the contactUs_location -->
+
+         <div id="contactUs_location" class="contactUs_location">
+            <div class="contactUs">
+                <section class="email-submission">
+                    <h1 class="contact-us-header">Contact Us</h1>
+                    <p>Reach out to us for all your automotive needs, from oil changes to engine diagnostics. Highly experienced, professional, and honest service guaranteed.</p>
+                    <form>
+                        <label for="name">Name* </label>
+                        <input type="text" id="name" class="input-field" required>
+            
+                        <label for="email">Email* </label>
+                        <input type="email" id="email" class="input-field" required>
+            
+                        <label for="message">Message* </label>
+                        <textarea id="message" class="input-field" rows="4" required></textarea>
+            
+                        <button type="submit" class="submit-btn">Send Email</button>
+             </div>
+
+            <div class="location">
+                <section class=" locationImage"></section>
+                <section class="locationDescription">
+                    <h1 class="locationHeader">Location</h1>
+                    <h3>Auto Pro Solutions</h3>
+                    <p>140 Regina Rd.#24<p>
+                    <p>Woodbridge.On L4L-8N1</p>
+                    <p>416-234-5010</p>
+                    <h3>Vaughan, Ontario, Canada</h3>
+                    <a href="https://maps.app.goo.gl/zvYBH6m85dVRbYb38" target="_blank">Google Maps</a>
+                </section>
+            </div>
+         </div>       
     </Main>
 
     <!-- Here start the footer section -->
@@ -95,7 +105,11 @@
             <div id="aboutUs" class="aboutUs">
                 <h1 class="headerAboutUs">About us</h1>
                 <p class="textAboutUs">Auto Pro Solutions is a leading auto repair shop in Vaughan, Ontario, dedicated to providing high-quality automotive services with honesty and professionalism.
-                    With a team of experienced technicians and a commitment to customer satisfaction, we are your trusted solution for all your auto repair needs.</p>
+                With a team of experienced technicians and a commitment to customer satisfaction, we are your trusted solution for all your auto repair needs.</p>
+                <a href="#aboutUs"><button class="GetQuote">GetQuote</button></a>
+            </div>
+            <div class="c2025">
+                <p>&#169 2025 AUTO PRO SOLUTIONS</p>
             </div>
      </footer>
 

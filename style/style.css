@@ -13,22 +13,22 @@ body{
     text-align: center;
     margin: 0px;
 }
-.headMenu {
-    position: relative;
+.navegation {
+    position: fixed;
     width: 100%;
     background-color: rgb(255, 200, 0);
     padding: 10px 0;
 }
 
 
-.headMenu ul{
+.navegation ul{
     display: flex;
     justify-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.headMenu ul li a{
+.navegation ul li a{
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 16px;
@@ -36,16 +36,22 @@ body{
     padding: 10px 20px;
     transition: color 0.7s ease;
 }
-.headMenu ul li a:hover {
-    color: white; /* Hover color */
+.navegation ul li a:hover {
+    color: white; 
     background-color: black;
+ }
+
+ .mainMessage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
 /* Header Section */
 header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 460px;
+    height: 600px;
     background-image: url(/images/header.jpg);
     background-size: cover;
     background-position: center;
@@ -74,8 +80,7 @@ header h2{
     justify-content: center;
     color:rgb(255, 255, 255);
     text-shadow: 2px 2px 2px rgb(0, 0, 0);
-    font-size: 3em;
-    display: flex;
+    font-size: em;
 
 }
 .buttonContainer{
@@ -94,7 +99,8 @@ main{
 .autoProInformation{
     display: flex;
     flex-direction: row;
-    background-color: #e0e0e0; 
+    align-items: center;
+    height: 700px;
 }
 .welcomeHeader {
     font-size: 2.5em;
@@ -104,13 +110,16 @@ main{
 }
 .informationImage{
     width: 50%;
-    height: 350px;
-    background-image: url(/images/informationImage.jpg);
+    padding: 15px;
+    margin: 15px;
+    height: 600px;
+    background-image: url(/images/location.JPG);
     background-size: cover;
     background-position: center;
     
 }
 .informationText{
+    text-align: center;
     font-size: 20px;
     width: 50%;
     height: 350px;
@@ -121,18 +130,30 @@ main{
     height: 50px;
     font-size: 3.4em;
     text-align: center;
-    background-color: rgb(255, 255, 255);
     margin: 15px;
 }
 .services{
+    display: flex;
+    background-color: rgb(232, 228, 222);
     display: flex;
     justify-content: space-between;
     gap: 10px;
     width: 100%;
     padding-top: 0px;
+    padding-bottom: 30px;
     font-size: 1.5em;
 }
+.servicesHeader {
+    width: 100vw; /* Asegura que ocupe todo el ancho de la ventana */
+    background-color: rgb(232, 228, 222);
+    margin: 0; /* Asegúrate de que no haya márgenes */
+    padding: 40px;
+}
 
+.oilChange, .brakeRepair, .engineDiagnostic{
+    background-color: rgb(241, 241, 234);
+    padding-bottom: 20px;
+}
 .oilChangeImage{
     width: 100%;
     height: 350px;
@@ -160,69 +181,60 @@ main{
 
 }
 
-/*  */
+
 .engineDiagnosticText, .brakeRepairText, .oilChangeText{
     text-align: center;
 }
 .moreInfo{
     font-size: 1em;
-    background-color: rgb(255, 200, 0);
+    background-color: rgba(222, 153, 5, 0.872);
     color: white;
     border: none;
     border-radius: 5px;
     transition: color 0.7s ease;
+    padding: 10px;
 }
 .moreInfo:hover{
-    
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .reviews{
+    display: flex;
+    align-items: center;
+    height: 200px;
     text-align: center;
     font-size: 1.5em;
+    background-color: rgb(255, 200, 0);
+}
+/* Aqui empiza el contactUs_location */
+.contactUs_location {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    height: 1000px;
 }
 
-.location{
-    display: flex;
-}
-.locationImage{
+.contactUs, .location {
     width: 50%;
-    height: 350px;
-    background-image: url(/images/Map.jpg);
-    background-size: cover;
-    background-position: center;
+    min-width: 300px; 
 }
-.locationDescription{
-    width: 50%;
-    height: 350px;
-    font-size: 1.3em;
-    background-color: #e0e0e0; 
-    background-size: cover;
-    background-position: center;
-}
-.locationDescription h1 {
-    text-align: center;
-    font-size: 3em;
-}
+
+
 
 /* Aqui esta el contact us */
-.contact-us{
+.contactUs {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
 }
+
 .email-submission{
 
-    background-color: #e0e0e0; 
     padding: 25px;
-    border-radius: 10px; 
-    border: 2px solid #ccc; 
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); 
     max-width: 400px;
     width: 100%;
-    text-align: center;
 }
 
 .contact-us-header {
@@ -249,7 +261,7 @@ textarea.input-field {
 }
 
 .submit-btn {
-    background-color: #7299c2;
+    background-color: rgb(255, 200, 0);
     color: white;
     border: none;
     padding: 12px 15px;
@@ -261,13 +273,42 @@ textarea.input-field {
 }
 
 .submit-btn:hover {
-    background-color: #2683e6;
+    background-color: rgba(255, 200, 0, 0.667);
 }
+/* Aquí esta location */
+
+.location{
+    display: flex;
+    flex-direction: column;
+}
+.locationImage{
+    width: 100%;
+    height: 50vh;
+    background-image: url(/images/informationImage.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.locationDescription{
+    height: 350px;
+    font-size: 1.3em;
+    background-size: cover;
+    background-position: center;
+}
+.locationDescription h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+ 
 
 /* Footer */
 footer{
     color: black;
+}
+.aboutUs{
     background-color: rgb(255, 200, 0);
+    flex-direction: column;
     display: flex;
     text-align: center;
     align-items: center;
@@ -275,9 +316,25 @@ footer{
 }
 .textAboutUs{
     font-size: 1.5em;
+    text-align: center;
+    width: 80%;
 }
 .headerAboutUs{
+    height: 30px;
     font-size: 3em;
+}
+.GetQuote{
+    padding: 10px;
+    background-color: rgb(50, 35, 35);
+    color: white;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.c2025{
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
 
 
