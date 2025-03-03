@@ -100,7 +100,7 @@ main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 700px;
+    height: auto;
 }
 .welcomeHeader {
     font-size: 2.5em;
@@ -108,14 +108,20 @@ main{
 .welcomeText{
     font-size: 1.1em;
 }
-.informationImage{
+.containerInformationImage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 60px 0px 60px 0px;
+    padding: 0px;
+    height: auto;
     width: 50%;
-    padding: 15px;
-    margin: 15px;
-    height: 600px;
-    background-image: url(../images/location.JPG);
-    background-size: cover;
-    background-position: center;
+}
+.informationImage{
+    margin: 0px;
+    padding: 0px;
+    width: 720px;
+    
     
 }
 .informationText{
@@ -208,10 +214,10 @@ main{
 }
 /* Aqui empiza el contactUs_location */
 .contactUs_location {
-    margin-top: 40px;
+    margin: 40px 0px;
     display: flex;
-    width: 100%;
-    height: 1000px;
+    width: auto;
+    height: auto;
 }
 
 .contactUs, .location {
@@ -335,6 +341,83 @@ footer{
     height: 100px;
     display: flex;
     align-items: center;
+}
+@media (max-width: 1434px) {
+    body {
+      font-size: 16px;
+    }
+    .container {
+      width: 90%;
+    }
+
+    .locationImage{
+        width: 400px;
+        height: 350px;
+    }
+    .informationImage{
+        margin: 0px;
+        padding: 0px;
+        width: 450px;
+        
+        
+    }
+    .location{
+        justify-content: center;
+        align-items: center;
+    }
+
+  }
+  
+  
+
+@media (max-width: 886px) {
+
+    .containerInformationImage{
+        display: none;
+    }
+    .services{
+        flex-direction: column;
+    }
+    .locationDescription{
+        height: 350px;
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .locationImage{
+        width: 300px;
+        height: 300px;
+        background-image: url(../images/informationImage.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .location{
+        justify-content: center;
+        align-items: center;
+    }
+    .autoProInformation{
+        align-items: center;
+        justify-content: center;
+    }
+    .subHeadMenu {
+        display: none;
+      }
+      .contactUs_location {
+        margin: 40px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        height: auto;
+    }
+    .linea {
+        margin: 10px;
+        width: 100%; 
+        height: 2px; 
+        background-color: black; 
+      }
+      .locationImage{
+        display: none;
+    }
 }
 
 
