@@ -375,6 +375,12 @@ footer{
     .containerInformationImage{
         display: none;
     }
+    .informationText{
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+        height: auto;
+    }
     .services{
         flex-direction: column;
     }
@@ -417,6 +423,9 @@ footer{
       }
       .locationImage{
         display: none;
+    }
+    .email-submission{
+        text-align: center;
     }
 }
 
