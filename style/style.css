@@ -13,6 +13,7 @@ body{
 
 }
 .mainHeader{
+    font-size: 5em;
     background-color: rgb(255, 200, 0);
     color: rgb(0, 0, 0);
     text-align: center;
@@ -63,9 +64,6 @@ header{
     border-radius: 5px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 
-}
-.mainHeader{
-    font-size: 5em;
 }
 .subHeadMenu{
     font-size: 4em;
@@ -386,7 +384,7 @@ footer{
   
 
 @media (max-width: 886px) {
-
+    
     .containerInformationImage{
         display: none;
     }
@@ -444,19 +442,53 @@ footer{
     }
 }
 @media (max-width: 516px) {
-    .navegation ul{
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden; 
+    }
+
+    header{
+        height: 300px;
+    }
+    #nav-services {
         display: none;
     }
-    .mainHeader{
+    .welcomeHeader{
+        font-size: 2em;
+        margin: 12px;
+    }
+    .welcomeText{
+        font-size: 1em;
+    }
+    .servicesHeader{
+        font-size: 2.4em;
+    }
+    .navegation ul li a{
+        font-size: 15px;
+    }
+    .contact-us-header {
+       font-size: 1.6em;
+    }
+    .locationHeader{
+        height: 20px;
+        font-size: 2.em !important;
+    }
+     .mainHeader{
         display: flex;
-        font-size: 3.5em;
-        height: 100px;
-        align-items: center;
-        justify-content: center;
+        font-size: 2.4em;
+        height: 50px;
     }
     .aboutUs{
-        height: 400px;
-
+        height: auto;
+    }
+    .headerAboutUs{
+        font-size: 2.4em;
+    }
+    .textAboutUs{
+        font-size: 22px;
     }
 
 }
